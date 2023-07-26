@@ -315,6 +315,40 @@ lvis_novel_label_ids = [12, 13, 16, 19, 20, 29, 30, 37, 38, 39, 41, 48, 50, 51, 
                     1079, 1083, 1115, 1117, 1118, 1123, 1125, 1128, 1134, 1143, 1144, 1145, 1147, 1149, 1156, 1157,
                     1158, 1164, 1166, 1192]
 
+coco_base_label_ids = [1, 2, 3, 4, 7, 8, 9, 15, 16, 19, 20, 23, 24, 25, 27, 31, 33, 34, 35, 38, 42, 44, 48, 50, 51, 52, 53, 54, 55, 56, 57, 59, 60, 62, 65, 70, 72, 73, 74, 75, 78, 79, 80, 82, 84, 85, 86, 90]
+coco_novel_label_ids = [5, 6, 17, 18, 21, 22, 28, 32, 36, 41, 47, 49, 61, 63, 76, 81, 87]
+coco_id2name = {1: 'person', 2: 'bicycle', 3: 'car', 4: 'motorcycle', 5: 'airplane', 6: 'bus', 7: 'train', 8: 'truck', 9: 'boat', 15: 'bench', 16: 'bird', 17: 'cat', 18: 'dog', 19: 'horse', 20: 'sheep', 21: 'cow', 22: 'elephant', 23: 'bear', 24: 'zebra', 25: 'giraffe', 27: 'backpack', 28: 'umbrella', 31: 'handbag', 32: 'tie', 33: 'suitcase', 34: 'frisbee', 35: 'skis', 36: 'snowboard', 38: 'kite', 41: 'skateboard', 42: 'surfboard', 44: 'bottle', 47: 'cup', 48: 'fork', 49: 'knife', 50: 'spoon', 51: 'bowl', 52: 'banana', 53: 'apple', 54: 'sandwich', 55: 'orange', 56: 'broccoli', 57: 'carrot', 59: 'pizza', 60: 'donut', 61: 'cake', 62: 'chair', 63: 'couch', 65: 'bed', 70: 'toilet', 72: 'tv', 73: 'laptop', 74: 'mouse', 75: 'remote', 76: 'keyboard', 78: 'microwave', 79: 'oven', 80: 'toaster', 81: 'sink', 82: 'refrigerator', 84: 'book', 85: 'clock', 86: 'vase', 87: 'scissors', 90: 'toothbrush'}
+coco_all_id2contiguous_id = {1: 0, 2: 1, 3: 2, 4: 3, 5: 4, 6: 5, 7: 6, 8: 7, 9: 8, 15: 9, 16: 10, 17: 11, 18: 12, 19: 13, 20: 14, 21: 15, 22: 16, 23: 17, 24: 18, 25: 19, 27: 20, 28: 21, 31: 22, 32: 23, 33: 24, 34: 25, 35: 26, 36: 27, 38: 28, 41: 29, 42: 30, 44: 31, 47: 32, 48: 33, 49: 34, 50: 35, 51: 36, 52: 37, 53: 38, 54: 39, 55: 40, 56: 41, 57: 42, 59: 43, 60: 44, 61: 45, 62: 46, 63: 47, 65: 48, 70: 49, 72: 50, 73: 51, 74: 52, 75: 53, 76: 54, 78: 55, 79: 56, 80: 57, 81: 58, 82: 59, 84: 60, 85: 61, 86: 62, 87: 63, 90: 64}
+coco_base_id2contiguous_id = {1: 0, 2: 1, 3: 2, 4: 3, 7: 4, 8: 5, 9: 6, 15: 7, 16: 8, 19: 9, 20: 10, 23: 11, 24: 12, 25: 13, 27: 14, 31: 15, 33: 16, 34: 17, 35: 18, 38: 19, 42: 20, 44: 21, 48: 22, 50: 23, 51: 24, 52: 25, 53: 26, 54: 27, 55: 28, 56: 29, 57: 30, 59: 31, 60: 32, 62: 33, 65: 34, 70: 35, 72: 36, 73: 37, 74: 38, 75: 39, 78: 40, 79: 41, 80: 42, 82: 43, 84: 44, 85: 45, 86: 46, 90: 47}
+
+# 65 class names
+OVD_COCO_ALL_CLS = ['person', 'bicycle', 'car', 'motorcycle', 'airplane', \
+    'bus', 'train', 'truck', 'boat', 'bench', 'bird', 'cat', 'dog', 'horse', \
+    'sheep', 'cow', 'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', \
+    'handbag', 'tie', 'suitcase', 'frisbee', 'skis', 'snowboard', 'kite', 'skateboard', \
+    'surfboard', 'bottle', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', \
+    'apple', 'sandwich', 'orange', 'broccoli', 'carrot', 'pizza', 'donut', 'cake', \
+    'chair', 'couch', 'bed', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard', \
+    'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase', \
+    'scissors', 'toothbrush']
+
+COCO_BASES=(
+    'person', 'bicycle', 'car', 'motorcycle', 'train', 'truck', 'boat',
+    'bench', 'bird', 'horse', 'sheep', 'bear', 'zebra', 'giraffe',
+    'backpack', 'handbag', 'suitcase', 'frisbee', 'skis', 'kite',
+    'surfboard', 'bottle', 'fork', 'spoon', 'bowl', 'banana', 'apple',
+    'sandwich', 'orange', 'broccoli', 'carrot', 'pizza', 'donut', 'chair',
+    'bed', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'microwave',
+    'oven', 'toaster', 'refrigerator', 'book', 'clock', 'vase',
+    'toothbrush'
+)
+COCO_NOVELS=(
+    'airplane', 'bus', 'cat', 'dog', 'cow', 'elephant', 'umbrella', 'tie',
+    'snowboard', 'skateboard', 'cup', 'knife', 'cake', 'couch', 'keyboard',
+    'sink', 'scissors'
+)
+
+# COCO_ALL_CLS = COCO_BASES + COCO
 
 
 VOC_CLASSES = ('aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car',
